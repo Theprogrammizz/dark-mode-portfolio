@@ -46,8 +46,7 @@ const HeroSection = () => {
               Projects <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="/resume.pdf"
-              download
+              href="#contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
             >
               <Download className="w-4 h-4" /> Download CV
