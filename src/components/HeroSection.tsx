@@ -1,6 +1,5 @@
 import { personalInfo, socialLinks } from "@/data/portfolio";
 import { Github, Linkedin, Twitter, Mail, ArrowRight, Download } from "lucide-react";
-import heroVisual from "@/assets/hero-visual.png";
 
 const iconMap: Record<string, React.ReactNode> = {
   github: <Github className="w-4 h-4" />,
@@ -25,9 +24,13 @@ const renderMarkdown = (text: string) => {
 const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center pt-20 relative overflow-hidden">
-      {/* Hero visual */}
-      <div className="absolute inset-0 pointer-events-none">
-        <img src={heroVisual} alt="" className="w-full h-full object-cover opacity-50 blur-sm" />
+      {/* Animated background elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-1/4 -right-20 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 -left-20 w-[400px] h-[400px] rounded-full bg-primary/10 blur-3xl animate-float [animation-delay:2s]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full border border-border/30 opacity-0 animate-scale-in [animation-delay:800ms]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border border-border/20 opacity-0 animate-scale-in [animation-delay:1000ms]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full border border-border/10 opacity-0 animate-scale-in [animation-delay:1200ms]" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
