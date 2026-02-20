@@ -26,8 +26,8 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center pt-20 relative overflow-hidden">
       {/* Hero visual */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] opacity-60 pointer-events-none animate-float">
-        <img src={heroVisual} alt="" className="w-full h-full object-contain" />
+      <div className="absolute inset-0 pointer-events-none">
+        <img src={heroVisual} alt="" className="w-full h-full object-cover opacity-50 blur-sm" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
