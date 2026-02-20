@@ -44,8 +44,8 @@ const CursorRevealGrid = () => {
         style={{
           backgroundImage: `linear-gradient(hsl(var(--border) / 0.15) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border) / 0.15) 1px, transparent 1px)`,
           backgroundSize: "60px 60px",
-          maskImage: `radial-gradient(circle 150px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 100%)`,
-          WebkitMaskImage: `radial-gradient(circle 150px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 100%)`,
+          maskImage: `radial-gradient(circle 300px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 100%)`,
+          WebkitMaskImage: `radial-gradient(circle 300px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 100%)`,
           transition: "mask-image 0.1s ease, -webkit-mask-image 0.1s ease",
         }}
       />
@@ -55,8 +55,8 @@ const CursorRevealGrid = () => {
         className="absolute inset-0 flex flex-wrap content-start gap-0 p-4 font-mono text-[10px] md:text-xs leading-relaxed tracking-[0.3em] uppercase break-all select-none"
         style={{
           color: "hsl(var(--primary) / 0.6)",
-          maskImage: `radial-gradient(circle 120px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 100%)`,
-          WebkitMaskImage: `radial-gradient(circle 120px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 100%)`,
+          maskImage: `radial-gradient(circle 250px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 100%)`,
+          WebkitMaskImage: `radial-gradient(circle 250px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 100%)`,
           transition: "mask-image 0.1s ease, -webkit-mask-image 0.1s ease",
           wordSpacing: "0.5em",
           lineHeight: "2.5",
