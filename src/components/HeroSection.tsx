@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { personalInfo, socialLinks } from "@/data/portfolio";
 import { Github, Linkedin, Twitter, Mail, ArrowRight, Download } from "lucide-react";
 import CursorRevealGrid from "./CursorRevealGrid";
@@ -23,10 +24,11 @@ const renderMarkdown = (text: string) => {
 };
 
 const HeroSection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
   return (
-    <section className="min-h-screen flex items-center pt-20 relative overflow-hidden">
-      {/* Cursor reveal grid background */}
-      <CursorRevealGrid />
+    <section ref={sectionRef} className="min-h-screen flex items-center pt-20 relative overflow-hidden">
+      <CursorRevealGrid parentRef={sectionRef} />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl">
@@ -46,7 +48,8 @@ const HeroSection = () => {
               Projects <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="#contact"
+              href="/resume.pdf"
+              download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
             >
               <Download className="w-4 h-4" /> Download CV
