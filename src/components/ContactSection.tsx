@@ -19,7 +19,7 @@ const ContactSection = () => {
         </p>
         <a
           href={`mailto:${personalInfo.email}`}
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity mb-12"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity mb-12 animate-glow-pulse"
         >
           <Mail className="w-4 h-4" /> Get in touch
         </a>

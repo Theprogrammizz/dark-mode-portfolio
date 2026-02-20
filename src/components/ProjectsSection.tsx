@@ -1,6 +1,7 @@
 import { projects } from "@/data/portfolio";
 import { ArrowRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import SpotlightCard from "./SpotlightCard";
 
 const ProjectsSection = () => {
   const { ref, isVisible } = useScrollReveal();
@@ -13,32 +14,36 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
-            <a
+            <SpotlightCard
               key={project.title}
-              href={project.link}
-              className={`card-glass p-6 flex flex-col justify-between hover-lift group transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-              style={{ transitionDelay: `${i * 120 + 200}ms` }}
+              className={`card-glass hover-lift transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
             >
-              <div>
-                <h3 className="text-lg font-bold mb-3">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-                  {project.description}
-                </p>
-              </div>
-              <div className="flex items-center justify-between">
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs font-mono text-muted-foreground border border-border rounded-full px-3 py-1"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+              <a
+                href={project.link}
+                className="p-6 flex flex-col justify-between h-full group"
+                style={{ transitionDelay: `${i * 120 + 200}ms` }}
+              >
+                <div>
+                  <h3 className="text-lg font-bold mb-3">{project.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
-                <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-              </div>
-            </a>
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs font-mono text-muted-foreground border border-border rounded-full px-3 py-1"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+              </a>
+            </SpotlightCard>
           ))}
         </div>
       </div>

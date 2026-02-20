@@ -1,5 +1,6 @@
 import { experiences, totalExperience } from "@/data/portfolio";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import AnimatedCounter from "./AnimatedCounter";
 
 const ExperienceSection = () => {
   const { ref, isVisible } = useScrollReveal();
@@ -27,9 +28,10 @@ const ExperienceSection = () => {
           ))}
         </div>
 
-        <div className="text-right mt-8">
-          <p className="text-sm text-muted-foreground">Work experience</p>
-          <p className="text-lg font-bold font-mono gradient-text inline-block">{totalExperience}</p>
+        <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border">
+          <AnimatedCounter end={5} suffix="+" label="Years Experience" />
+          <AnimatedCounter end={10} suffix="+" label="Projects Completed" />
+          <AnimatedCounter end={3} suffix="+" label="Companies" />
         </div>
       </div>
     </section>

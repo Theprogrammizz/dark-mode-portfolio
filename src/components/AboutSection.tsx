@@ -1,5 +1,6 @@
-import { personalInfo, skillCategories } from "@/data/portfolio";
+import { personalInfo } from "@/data/portfolio";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import SkillMarquee from "./SkillMarquee";
 
 const renderMarkdown = (text: string) => {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
@@ -25,20 +26,7 @@ const AboutSection = () => {
           {renderMarkdown(personalInfo.aboutText)}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {skillCategories.map((cat, i) => (
-            <div
-              key={cat.title}
-              className={`card-glass p-6 hover-lift transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-              style={{ transitionDelay: `${i * 100 + 200}ms` }}
-            >
-              <h3 className="text-sm font-bold mb-3">{cat.title}</h3>
-              <p className="text-sm text-muted-foreground font-mono leading-relaxed">
-                {cat.skills}
-              </p>
-            </div>
-          ))}
-        </div>
+        <SkillMarquee />
       </div>
     </section>
   );
