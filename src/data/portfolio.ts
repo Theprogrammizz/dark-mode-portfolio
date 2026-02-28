@@ -5,8 +5,8 @@
 // ============================================================
 
 export const personalInfo = {
-  name: "Alex Morgan",
-  role: "Full-stack Developer",
+  name: "Dev Mishra",
+  role: "Full-stack Flutter Developer",
   tagline: "My goal is to write **maintainable, clean and understandable code** to make the development process enjoyable.",
   aboutText: "Hello! I'm Alex, a **full-stack developer** with more than **5 years** of experience building modern web applications. I love turning complex problems into simple, beautiful solutions.",
   email: "hello@alexmorgan.dev",
