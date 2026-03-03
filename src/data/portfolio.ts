@@ -6,11 +6,11 @@
 
 export const personalInfo = {
   name: "Dev Mishra",
-  role: "Full-stack Flutter Developer",
-  tagline: "My goal is to write **maintainable, clean and understandable code** to make the development process enjoyable.",
-  aboutText: "Hello! I'm Alex, a **full-stack developer** with more than **5 years** of experience building modern web applications. I love turning complex problems into simple, beautiful solutions.",
-  email: "hello@alexmorgan.dev",
-  location: "San Francisco, CA",
+  role: "Flutter Developer | Future Cybersecurity Engineer | Game Developer",
+  tagline: "I build clean, scalable Flutter applications while exploring backend systems, cybersecurity, and game development.",
+  aboutText: "Hello! I'm Dev, a passionate **Flutter developer and student** focused on building real-world applications. I have built projects using **Flutter, Hive, Provider, and Dart**, and I'm currently strengthening my foundation in **Python, Backend Development, and Cybersecurity (CompTIA A+)**. I aim to grow into a full-stack engineer while exploring **game development and system-level concepts**.",
+  email: "devaa.codes@gmail.com",
+  location: "Lucknow, India",
 };
 
 export const navLinks = [
@@ -21,77 +21,65 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  { label: "GitHub", url: "https://github.com", icon: "github" },
-  { label: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-  { label: "Twitter", url: "https://twitter.com", icon: "twitter" },
-  { label: "Email", url: "mailto:hello@alexmorgan.dev", icon: "mail" },
+  { label: "GitHub", url: "https://github.com/theprogrammizz", icon: "github" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/dev-mishra-b379013b3/", icon: "linkedin" },
+  { label: "Twitter", url: "https://twitter.com/", icon: "twitter" },
+  { label: "Email", url: "mailto:devaa.codes@gmail.com", icon: "mail" },
 ];
 
 export const skillCategories = [
   {
-    title: "Front-end",
-    skills: "TypeScript / React / Next.js / Tailwind CSS / Redux / GraphQL / React Native / Framer Motion",
+    title: "Mobile Development",
+    skills: "Flutter / Dart / Hive / Provider / State Management / Responsive UI / Material Design",
   },
   {
-    title: "Back-end",
-    skills: "Node.js / Express / PostgreSQL / MongoDB / Redis / REST APIs / GraphQL / Microservices",
+    title: "Backend Development",
+    skills: "Python / Node.js / Express.js / REST APIs / JSON / Authentication (Basics) / Go (Learning Soon)",
   },
   {
-    title: "DevOps",
-    skills: "Docker / AWS / CI/CD / Nginx / Kubernetes / GitHub Actions",
+    title: "Cybersecurity & Systems",
+    skills: "Networking Fundamentals / Linux / CompTIA A+ Studies / Basic Security Concepts",
   },
   {
-    title: "Tools",
-    skills: "Git / Figma / VS Code / Postman / Jira / Notion",
+    title: "Tools & Workflow",
+    skills: "Git / GitHub / VS Code / Postman / Linux / Figma (Basic)",
   },
 ];
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    title: "Todo App with Hive",
+    description: "A task management application built using Flutter and Hive with full CRUD functionality, local database storage, and clean UI.",
+    tags: ["Flutter", "Hive", "Provider", "Dart"],
     link: "#",
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management tool with real-time updates, drag-and-drop interface, and team workspace features.",
-    tags: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
+    title: "Data Management App",
+    description: "A Flutter app implementing complete CRUD operations using Hive for local database management with structured state management.",
+    tags: ["Flutter", "Hive", "State Management"],
     link: "#",
   },
   {
-    title: "Analytics Dashboard",
-    description: "A data visualization dashboard with interactive charts, custom reports, and automated data pipeline integration.",
-    tags: ["React", "D3.js", "Python", "AWS"],
+    title: "Multi-Screen Flutter App",
+    description: "A Flutter application featuring conditional routing, time-based greetings, and organized state handling across multiple screens.",
+    tags: ["Flutter", "Navigation", "Dart"],
     link: "#",
   },
 ];
 
 export const experiences = [
   {
-    period: "2022 - Present",
-    duration: "2 years",
-    company: "TechCorp Inc.",
-    role: "Senior Frontend Developer | React & TypeScript",
+    period: "2024 - Present",
+    duration: "Ongoing",
+    company: "Self-Learning & Personal Projects",
+    role: "Flutter Developer | Backend Exploration with Python & Node.js",
   },
   {
-    period: "2020 - 2022",
-    duration: "2 years",
-    company: "StartupLab",
-    role: "Full-stack Developer | React & Node.js",
-  },
-  {
-    period: "2019 - 2020",
-    duration: "1 year",
-    company: "WebAgency",
-    role: "Frontend Developer | JavaScript & Vue",
-  },
-  {
-    period: "2018 - 2019",
-    duration: "1 year",
-    company: "FreelanceWork",
-    role: "Junior Developer | HTML, CSS & JavaScript",
+    period: "2024 - Present",
+    duration: "Ongoing",
+    company: "Cybersecurity Studies",
+    role: "Student | Preparing for CompTIA A+",
   },
 ];
 
-export const totalExperience = "5+ years";
+export const totalExperience = "1+ year (Project-based development)";
